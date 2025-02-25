@@ -1,13 +1,15 @@
+asgiref==3.8.1
 Brotli==1.1.0
 click==8.1.8
 dj-database-url==2.3.0
-Django @ file:///croot/django_1731615954020/work
+Django==5.1.3
 gunicorn==23.0.0
 h11==0.14.0
 packaging==24.2
+pip==25.0
 psycopg2-binary==2.9.10
 setuptools==75.8.0
-sqlparse @ file:///croot/sqlparse_1734704446487/work
+sqlparse==0.5.2
 typing_extensions==4.12.2
 uvicorn==0.34.0
 wheel==0.45.1
