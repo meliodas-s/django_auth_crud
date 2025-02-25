@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<main class="container">
+    <div class="row">
+        <div class="col-md-4 offset-md-4 mt-5">
+
+
+            {% if error %}
+            <p style="color: red;">{{ error }}</p>
+            {% endif %}
+
+
+            <div class="card card-body">
+                <form method="post" id="campos_tareas">
+                    {% csrf_token %}
+                    {{ form.as_p }}
+                </form>
+                <!-- Boton para completar la tarea -->
+                <form action="{% url 'complete_task' task.id%}" method="POST" id="form_completed">
+                    {% csrf_token %}
+                </form>
+
+                <!-- Boton para eliminar la tarea -->
+                <form action="{% url 'delete_task' task.id%}" method="POST" id="form_delete">
+                    {% csrf_token %}
+                </form>
+
+                <div class="d-flex justify-content-between">
+                    <button class="btn btn-primary" form="campos_tareas">
+                        Update
+                    </button>
+                    <button class="btn btn-secondary" form="form_completed">
+                        Completed
+                    </button>
+                    <button class="btn btn-danger" form="form_delete">
+                        Delete
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</main>
+
+{% endblock %}

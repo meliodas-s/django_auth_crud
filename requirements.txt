@@ -1,0 +1,15 @@
+asgiref @ file:///croot/asgiref_1724072470684/work
+Brotli==1.1.0
+click==8.1.8
+dj-database-url==2.3.0
+Django @ file:///croot/django_1731615954020/work
+gunicorn==23.0.0
+h11==0.14.0
+packaging==24.2
+psycopg2-binary==2.9.10
+setuptools==75.8.0
+sqlparse @ file:///croot/sqlparse_1734704446487/work
+typing_extensions==4.12.2
+uvicorn==0.34.0
+wheel==0.45.1
+whitenoise==6.9.0
